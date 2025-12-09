@@ -30,6 +30,11 @@ body {
     margin-bottom: 40px;
 }
 
+/* Text alignment helper */
+.text-center {
+    text-align: center;
+}
+
 /* =========================================
    2. TYPOGRAPHY SYSTEM (Client Specified)
    ========================================= */
@@ -77,6 +82,15 @@ body {
     color: #011946;
 }
 
+/*Highlights*/
+.highlight {
+    background-color: #fff7cc; 
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
 /* =========================================
    3. LISTS (Exact Specifications)
    ========================================= */
@@ -116,6 +130,14 @@ ol.number-list li {
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 8px;
+}
+
+/* Handles nested lists (e.g. bullet inside bullet) */
+ul.simple-bullets ul,
+ol.number-list ul {
+    margin-top: 8px;
+    list-style-type: circle;
+    margin-bottom: 0;
 }
 
 /* =========================================
@@ -199,6 +221,11 @@ ol.number-list li {
     text-align: center;
 }
 
+/* Margin for equation notes */
+.equation-note {
+    margin-left: 10px;
+}
+
 .formula {
     font-family: 'Times New Roman', serif;
     font-weight: 500;
@@ -243,35 +270,3 @@ hr {
     margin: 40px 0;
 }
 
-/* =========================================
-   6. HELPERS FOR CLEAN HTML
-   (Replaces inline styles)
-   ========================================= */
-
-/* Handles the inline yellow highlights */
-/* Uses the #fff7cc color from the "Exam Tip" spec */
-.inline-highlight {
-    background-color: #fff7cc; 
-    padding: 2px 6px;
-    border-radius: 4px;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-}
-
-/* Handles nested lists (e.g. bullet inside bullet) */
-ul.simple-bullets ul,
-ol.number-list ul {
-    margin-top: 8px;
-    list-style-type: circle;
-    margin-bottom: 0;
-}
-
-/* Text alignment helper */
-.text-center {
-    text-align: center;
-}
-
-/* Margin for equation notes */
-.equation-note {
-    margin-left: 10px;
-}
