@@ -1,0 +1,277 @@
+/* =========================================
+   1. GLOBAL RESET & TYPOGRAPHY
+   MATCHING SIMPLESTUDY SPECS
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Spec 1: Font Family Inter */
+    font-family: 'Inter', sans-serif;
+    /* Spec 2: Base Text Color #011946 (Dark Navy) */
+    color: #011946;
+    /* Spec 3: Line Height 1.55 */
+    line-height: 1.55;
+    background-color: #fff;
+}
+
+/* Mobile-first Container */
+.webpage {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.demo-section {
+    margin-bottom: 40px;
+}
+
+/* =========================================
+   2. TYPOGRAPHY SYSTEM (Client Specified)
+   ========================================= */
+
+/* H1 Main Heading */
+.h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #011946;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* H2 Subsection Heading */
+.h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #011946;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* H3 Smaller Subheading */
+.h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #011946;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Body Text */
+.body {
+    font-size: 16px;
+    font-weight: 400;
+    color: #011946;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Small Text / Captions */
+.small {
+    font-size: 14px;
+    font-weight: 400;
+    color: #011946;
+}
+
+/* =========================================
+   3. LISTS (Exact Specifications)
+   ========================================= */
+
+/* Unordered List (SimpleStudy Match) */
+ul.simple-bullets {
+    list-style-type: disc; /* Standard disc bullets */
+    margin-left: 20px;     /* Required indent */
+    padding-left: 0;       /* Tailwind reset match */
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* List Items */
+ul.simple-bullets li {
+    font-family: 'Inter', sans-serif;
+    color: #011946;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 8px; /* Matches their spacing */
+}
+
+/* Numbered List */
+ol.number-list {
+    margin-left: 20px;
+    list-style-type: decimal;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+ol.number-list li {
+    font-family: 'Inter', sans-serif;
+    color: #011946;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   4. BOXES (New Color System)
+   ========================================= */
+
+/* Definition Box (Light Grey) */
+.definition-box {
+    border: 1px solid #eaecf0;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f8f9fb;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+/* Exam Tip (Yellow Tint) */
+.exam-tip {
+    background-color: #fff7cc;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    /* Client asked for weight 600 here */
+    font-weight: 600; 
+    margin-bottom: 16px;
+}
+
+/* Key Point (Blue Tint) */
+.key-point {
+    background-color: #eef6ff;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    /* Client asked for weight 600 here */
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* =========================================
+   5. RETAINED ELEMENTS (Equations & Tables)
+   Updated to match new colors
+   ========================================= */
+
+/* Equations - Updated to use Dark Navy */
+.equation {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif; /* Keep Math font for equations */
+}
+
+.equation-LHS {
+    font-style: normal;
+    color: #011946;
+    font-size: 20px; /* Match H3 size */
+}
+
+.equation-RHS {
+    color: #011946; /* Updated to Dark Navy */
+}
+
+.fraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.numerator {
+    border-bottom: 2px solid #011946; /* Updated Line Color */
+    padding: 0 5px 2px 5px;
+    text-align: center;
+}
+
+.denominator {
+    padding: 2px 5px 0 5px;
+    text-align: center;
+}
+
+.formula {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Tables - Updated to Dark Navy */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px; /* Match Body text */
+    margin-bottom: 30px;
+}
+
+th {
+    text-align: left;
+    color: #011946;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-bottom: 2px solid #eaecf0; /* Use the Light Grey from Definition box */
+}
+
+td {
+    padding: 12px 8px;
+    color: #011946;
+    border-bottom: 1px solid #eaecf0;
+    vertical-align: top;
+}
+
+blockquote {
+    border-left: 4px solid #011946;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    background-color: #f8f9fb;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eaecf0;
+    margin: 40px 0;
+}
+
+/* =========================================
+   6. HELPERS FOR CLEAN HTML
+   (Replaces inline styles)
+   ========================================= */
+
+/* Handles the inline yellow highlights */
+/* Uses the #fff7cc color from the "Exam Tip" spec */
+.inline-highlight {
+    background-color: #fff7cc; 
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* Handles nested lists (e.g. bullet inside bullet) */
+ul.simple-bullets ul,
+ol.number-list ul {
+    margin-top: 8px;
+    list-style-type: circle;
+    margin-bottom: 0;
+}
+
+/* Text alignment helper */
+.text-center {
+    text-align: center;
+}
+
+/* Margin for equation notes */
+.equation-note {
+    margin-left: 10px;
+}
